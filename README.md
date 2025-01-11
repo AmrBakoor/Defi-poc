@@ -1,8 +1,8 @@
 ## DeFi Road Map
 
-We are building an innovative DeFi platform similar to [Yam on RealT](https://staging-yam.realtoken.network), aiming to make decentralized finance accessible and efficient. 
+We are building an innovative DeFi platform similar to [Yam on RealT](https://staging-yam.realtoken.network), aiming to make decentralized finance accessible and efficient.
 Our project is in advanced stages, with initial smart contracts and an frontend UI already implemented.
-The role will focus on finalizing and enhancing our platform’s user interface, integrating wallet functionality, and developing a marketplace for token transactions. 
+The role will focus on finalizing and enhancing our platform’s user interface, integrating wallet functionality, and developing a marketplace for token transactions.
 
 ## Environment
 
@@ -23,4 +23,3 @@ cd Defi-poc
 npm i
 
 npm start
-
