@@ -56,7 +56,7 @@ const Navigation: FC = () => {
     ethereum
       .request({ method: "eth_getBalance", params: [account, "latest"] })
       .then((balance: any) => {
-        //setUserBalance(ethers.utils.formatEther(balance));
+        setUserBalance(ethers.utils.formatEther(balance));
       })
       .catch((error: any) => {
         setErrorMessage(error.message);
@@ -140,13 +140,15 @@ const Navigation: FC = () => {
           mb: { xs: 3, lg: 0 },
           fontSize: "24px",
           lineHeight: "6px",
-          width: "324px",
+          width: "350px",
           height: "45px",
           borderRadius: "6px",
           backgroundColor: "#00dbe3",
         }}
       >
-        {defaultAccount ? `Connected` : "Connect Wallet"}
+        {defaultAccount
+          ? `Connected: $ (${userBalance} ETH)`
+          : "Connect Wallet"}
       </Box>
     </Box>
   );
